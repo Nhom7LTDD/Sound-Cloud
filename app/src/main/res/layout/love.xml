@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margintop"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ln1_love1"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/boder_textview"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/boder_textview">
+
+                <TextView
+                    android:id="@+id/statiom"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/heart30"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:text="Station"
+                    android:textColor="@color/bbblack"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/statiom"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borderbox"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordertop_bot_textview"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borderbox"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/borderbottom_textview">
+
+                <TextView
+                    android:id="@+id/playlist"
+                    android:layout_width="170dp"
+
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/page30"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:text="Playlist Albums"
+                    android:textColor="@color/bbblack"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/playlist"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borderbox"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordertop_bot_textview"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borderbox"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/borderbottom_textview"
+
+                >
+
+                <TextView
+                    android:id="@+id/liketraks"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+
+                    android:drawableLeft="@drawable/wifi30"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="15dp"
+                    android:text="Likes Tracks"
+                    android:textColor="@color/bbblack"
+                    android:textSize="15dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@id/liketraks"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borderbox"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bordertop_bot_textview"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borderbox"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnl_love2"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_below="@+id/ln1_love1"
+            android:layout_marginTop="@dimen/margintop"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:paddingStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boder_textview"
+                android:gravity="center_vertical"
+                android:text="Recently Player"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:paddingStart="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/borderbottom_textview"
+                android:orientation="horizontal"
+
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:background="@drawable/borderbottom_textview">
+
+                <TextView
+
+                    android:id="@+id/seeall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="19dp"
+                    android:text="SEE ALL RECENTLY PLAYED"
+                    android:textColor="@color/bbblack"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/seeall"
+                    android:src="@drawable/nextpage24" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnl_love3"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_below="@id/lnl_love2"
+            android:layout_marginTop="@dimen/margintop"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margintop"
+        >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/boder_textview"
+                android:gravity="center_vertical"
+                android:text="Listening history"
+                android:paddingStart="15dp"
+                android:textSize="15dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/borderbottom_textview"
+                android:paddingStart="15dp"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/borderbottom_textview">
+                <TextView
+                    android:id="@+id/seealllistten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+
+                    android:text="SEE ALL LISTENING HISTORY"
+                    android:textColor="@color/bbblack"
+                    android:layout_marginTop="19dp"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/seealllistten"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/nextpage24" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
