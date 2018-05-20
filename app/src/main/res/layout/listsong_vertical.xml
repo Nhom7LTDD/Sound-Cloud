@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="3dp"
+        android:layout_height="110dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/margintop"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="70dp"
+                android:id="@+id/listsong_img"
+                android:layout_height="70dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/imageslide4"/>
+            <LinearLayout
+                android:id="@+id/listsong_lnl"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/listsong_img"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/tencasilistsong"
+                android:text="Ten ca si"/>
+                <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                    android:id="@+id/tenbaihatlistsong"
+                    android:textColor="@color/bbblack"
+                android:text="Ten bai hat"/>
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="20dp"
+                     android:src="@drawable/icplay24dp"/>
+                <TextView
+                    android:padding="2dp"
+                    android:id="@+id/dungluongbaihat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="4,01M"
+
+
+
+                    />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/timesong"
+                android:layout_height="wrap_content"
+                android:text="3:14"
+                android:layout_alignParentEnd="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/vert24"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

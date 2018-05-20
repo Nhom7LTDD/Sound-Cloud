@@ -1,5 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
 
-</RelativeLayout>
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+  >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/margintop"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:cardElevation="1.5dp"
+        >
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tieude"
+                android:textStyle="normal"
+                android:textColor="@color/bbblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More of what you like"
+                android:textSize="22dp"/>
+            <TextView
+                android:id="@+id/motatieude"
+                android:textColor="@color/bblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="Suggestions based on what you've liked or played"/>
+            <android.support.v7.widget.RecyclerView
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Moreofwhatyoulike">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/margintop"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:cardElevation="1.5dp"
+        >
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tieude1"
+                android:textStyle="normal"
+                android:textColor="@color/bbblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chill"
+                android:textSize="22dp"/>
+            <TextView
+                android:id="@+id/motatieude1"
+                android:textColor="@color/bblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="@string/motatieude"/>
+            <android.support.v7.widget.RecyclerView
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Chill">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/margintop"
+
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:cardElevation="1.5dp"
+            >
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tieude2"
+                    android:textStyle="normal"
+                    android:textColor="@color/bbblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Party"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:id="@+id/motatieude2"
+                    android:textColor="@color/bblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="@string/motatieude"/>
+                <android.support.v7.widget.RecyclerView
+
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Party">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="@dimen/margintop"
+
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            app:cardElevation="1.5dp"
+            >
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tieude3"
+                    android:textStyle="normal"
+                    android:textColor="@color/bbblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relax"
+                    android:textSize="22dp"/>
+                <TextView
+                    android:id="@+id/motatieude3"
+                    android:textColor="@color/bblack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="@string/motatieude"/>
+                <android.support.v7.widget.RecyclerView
+
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Relax">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/margintop"
+
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        app:cardElevation="1.5dp"
+        >
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tieude4"
+                android:textStyle="normal"
+                android:textColor="@color/bbblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study"
+                android:textSize="22dp"/>
+            <TextView
+                android:id="@+id/motatieude4"
+                android:textColor="@color/bblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:text="@string/motatieude"/>
+            <android.support.v7.widget.RecyclerView
+
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Study">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

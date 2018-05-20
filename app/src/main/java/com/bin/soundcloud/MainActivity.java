@@ -1,10 +1,16 @@
 package com.bin.soundcloud;
 
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.bin.soundcloud.Adapter.ViewpageAdapter;
+import com.bin.soundcloud.fragment.find_fragment;
+import com.bin.soundcloud.fragment.home_fragment;
+import com.bin.soundcloud.fragment.love_fragment;
+import com.bin.soundcloud.fragment.profile;
+import com.bin.soundcloud.fragment.search_fragment;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tablayout;
