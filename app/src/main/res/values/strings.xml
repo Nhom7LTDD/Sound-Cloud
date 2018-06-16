@@ -5,6 +5,10 @@
     <string name="title">Sound Cloud</string>
     <string name="desc">Thông báo mới !!!</string>
     <string name="motatieude">Popular playlist from the SoundCloud community</string>
-
+    <string name="under"><u>Terms of use.</u></string>
+    <string name="forgot"><u>Forgot your password?</u></string>
+    <string name="agree">By selecting "Continue", you agree to the </string>
+    <string name="term">Terms of use </string>
+    <string name="policy">Privacy policy </string>
 
 </resources>

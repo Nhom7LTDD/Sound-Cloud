@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bin.soundcloud.after_create">
+
+
+
+        <RelativeLayout
+            android:id="@+id/bg_aC"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One more step"
+                android:textColor="#c4c3c3"
+                android:layout_marginBottom="15dp"/>
+
+
+            <TextView
+                android:textSize="15dp"
+                android:id="@+id/t2"
+                android:textColor="#c4c3c3"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:text="@string/agree" />
+            <LinearLayout
+                android:layout_centerHorizontal="true"
+                android:id="@id/t3"
+                android:layout_below="@id/t2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/term"
+                android:textColor="#425acf"/>
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#c4c3c3"
+                android:text=" and " />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/policy"
+                android:textColor="#425acf"/>
+                <TextView
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t3"
+                    android:text=" of"
+                    android:textColor="#c4c3c3"/>
+            </LinearLayout>
+            <TextView
+                android:textColor="#c4c3c3"
+                android:textSize="15dp"
+                android:id="@+id/t4"
+                android:layout_below="@id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SoundClound"
+                android:layout_centerHorizontal="true"/>
+            <RelativeLayout
+                android:id="@+id/group"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/t4"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/cancel"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Cancel"
+                    android:background="@drawable/custom5"/>
+
+                <TextView
+                    android:textColor="#282828"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:id="@+id/next"
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:text="Continue"
+                    android:background="@drawable/custom2"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

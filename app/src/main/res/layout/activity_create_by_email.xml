@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bin.soundcloud.create_by_email">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/bg_cBEmail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textColor="#c4c3c3"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/allerta"
+            android:id="@+id/txt1"
+            android:textSize="16dp"
+            android:text="Create an account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/layout_create"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom4"
+            android:orientation="vertical"
+            android:layout_below="@id/txt1"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:background="@drawable/borderbottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:text="Email"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+                <EditText
+                    android:id="@+id/emailAddr"
+                    android:background="@drawable/custom2"
+                    android:textSize="14dp"
+                    android:hint="Your email address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/borderbottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="Password"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/passAddr"
+                    android:background="@drawable/custom2"
+                    android:textSize="14dp"
+                    android:hint="At least 6 charactes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/borderbottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="Confirm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/confAddr"
+                    android:background="@drawable/custom2"
+                    android:textSize="14dp"
+                    android:hint="Confirm your password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/borderbottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="Age"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/ageAddr"
+                    android:background="@drawable/custom2"
+                    android:textSize="14dp"
+                    android:hint="Enter your age"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                >
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="Gender"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/gender_sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/divButton"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout_create"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/back1"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Cancel"
+                android:background="@drawable/custom5"/>
+
+            <TextView
+                android:textColor="#282828"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:id="@+id/done1"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:text="Done"
+                android:background="@drawable/custom2"
+                android:onClick="onDoneClick"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@id/divButton"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="We may use your email for update and tip's on SoundCloud's products and services. You can unsubscribe for free at any time in your notification preferences."
+            android:textAlignment="center"
+            android:textColor="#c4c3c3"
+            android:textSize="13dp" />
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

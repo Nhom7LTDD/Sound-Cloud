@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bin.soundcloud.create_account">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/bg_create"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/custom2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/GGsIn"
+            android:orientation="horizontal"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ggicon"
+                android:layout_marginRight="35dp"/>
+            <TextView
+                android:textColor="#282828"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with Google"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom3"
+            android:orientation="horizontal"
+            android:id="@+id/FBsIn"
+            android:layout_below="@id/GGsIn"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp">
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/fbicon"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with Facebook"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/custom2"
+            android:textColor="#282828"
+            android:gravity="center"
+            android:text="Sign up with your email address"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/EsUp"
+            android:layout_below="@id/FBsIn"
+            android:layout_width="220dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/EsUp"
+            android:text="We may use your email for update and tip's on SoundCloud's products and services. You can unsubscribe for free at any time in your notification preferences."
+            android:textAlignment="center"
+            android:textSize="13dp"
+            android:textColor="#c4c3c3"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

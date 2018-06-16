@@ -61,6 +61,7 @@ public class RecycleviewAdapter_1 extends RecyclerView.Adapter<RecycleviewAdapte
                intent.putExtra("anhbaihatitemsong",listsong.get(position).getImage());
                intent.putExtra("tencasi",listsong.get(position).getTencasi());
                intent.putExtra("tenaihat",listsong.get(position).getTenbaihat());
+               intent.putExtra("urlbaihat",listsong.get(position).getUrlbaihat());
                mcontext.startActivity(intent);
            }
        });

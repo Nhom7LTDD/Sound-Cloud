@@ -4,10 +4,18 @@ public class SingleItemRecycleview {
     private String image;
     private String tencasi;
     private String tenbaihat;
+    private String urlbaihat;
+
+
 
     public SingleItemRecycleview() {
     }
-
+    public SingleItemRecycleview(String image, String tencasi, String tenbaihat, String urlbaihat) {
+        this.image = image;
+        this.tencasi = tencasi;
+        this.tenbaihat = tenbaihat;
+        this.urlbaihat = urlbaihat;
+    }
     public SingleItemRecycleview(String image, String tencasi, String tenbaihat) {
         this.image = image;
         this.tencasi = tencasi;
@@ -37,4 +45,13 @@ public class SingleItemRecycleview {
     public void setTenbaihat(String tenbaihat) {
         this.tenbaihat = tenbaihat;
     }
+    public String getUrlbaihat() {
+        return urlbaihat;
+    }
+
+    public void setUrlbaihat(String urlbaihat) {
+        this.urlbaihat = urlbaihat;
+    }
+
+
 }

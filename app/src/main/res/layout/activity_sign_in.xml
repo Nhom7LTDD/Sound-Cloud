@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bin.soundcloud.signIn">
+    <RelativeLayout
+        android:id="@+id/background2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp">
+        <LinearLayout
+            android:background="@drawable/custom2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/GGlogin"
+            android:orientation="horizontal"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ggicon"
+                android:layout_marginRight="35dp"/>
+            <TextView
+                android:textColor="#282828"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with Google"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom3"
+            android:orientation="horizontal"
+            android:id="@+id/FBlogin"
+            android:layout_below="@id/GGlogin"
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:paddingLeft="15dp">
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/fbicon"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"/>
+            <TextView
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with Facebook"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/orText"
+            android:textColor="#c4c3c3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/FBlogin"
+            android:fontFamily="@font/allerta"
+            android:text="Or sign in with your account"/>
+        <LinearLayout
+        android:id="@+id/layout_login"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom4"
+        android:orientation="vertical"
+        android:layout_below="@id/orText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:background="@drawable/borderbottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:text="Email"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+            <EditText
+                android:id="@+id/emailSin"
+                android:background="@drawable/custom2"
+                android:textSize="14dp"
+                android:hint="Your email address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            >
+            <TextView
+                android:paddingLeft="10dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:text="Password"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/passSin"
+                android:background="@drawable/custom2"
+                android:textSize="14dp"
+                android:hint="Your password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/divButton"
+            android:layout_marginTop="15dp"
+           android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout_login"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center"
+            android:id="@+id/back"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:text="Cancel"
+            android:background="@drawable/custom5"/>
+
+            <TextView
+                android:textColor="#282828"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:id="@+id/done"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:text="Done"
+                android:onClick="onSignInClick"
+                android:background="@drawable/custom2"/>
+        </RelativeLayout>
+
+        <TextView
+
+            android:fontFamily="@font/allerta"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/divButton"
+            android:id="@+id/textForgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot"
+            android:textColor="#2640ff"/>
+
+        <TextView
+            android:id="@id/text1"
+            android:layout_marginTop="30dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textForgot"
+            android:text="We may use your email for update and tip's on SoundCloud's products and services. You can unsubscribe for free at any time in your notification preferences."
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="#c4c3c3"/>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text2"
+            android:textSize="14dp"
+            android:text="By signing in, your agree to our "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#c4c3c3"/>
+        <TextView
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/under"
+            android:textColor="#2640ff"
+
+           />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
